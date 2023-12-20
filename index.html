@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 Task</title>
+</head>
+<body>
+    function areEqualJSON(obj1, obj2) {<br>
+        <h4>Convert JSON objects to strings<br></h4>
+        const str1 = JSON.stringify(obj1);<br>
+        const str2 = JSON.stringify(obj2);<br>
+    <br>
+        <h4>Compare the string representations</h4>
+        return str1 === str2;
+    }<br>
+
+    <h4>Example usage</h4>
+    let obj1 = {name: "person1", age: 5};<br>
+    let obj2 = {age: 5, name: "person1"};<br>
+    
+    if (areEqualJSON(obj1, obj2)) <br>{
+        <br>console.log("The JSON objects are equal.");<br>
+    }<br>
+     else {<br>
+
+        console.log("The JSON objects are not equal.");
+    <br>}
+</body>
+</html>
